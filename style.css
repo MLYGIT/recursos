@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/Captura de pantalla 2024-08-26 121658.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #81bcfc;
+}
+
+/* Estilo para el encabezado */
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #e6b30e;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Contenedor de los artículos de servicios */
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+  min-height: 80vh;
+}
+
+/* Estilo para los artículos */
+.box-services {
+  width: 25%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin: 1rem;
+}
+
+/* Efecto hover para los artículos */
+.box-services:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px -20px rgba(78, 114, 223, 0.5);
+}
+
+/* Estilo para las imágenes dentro de los artículos */
+.box-image-services img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Título de servicios */
+.title-services {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+}
+
+/* Botón de descarga */
+.download-button {
+  background-color: #e91827;
+  color: rgb(20, 223, 115);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #b81521;
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Contenedor de videos (si es necesario) */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
